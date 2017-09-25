@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://tableau.lvh.me/api/2.6/serverinfo
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (linux-gnu x86_64) ruby/2.3.3p222
+      Content-Type:
+      - application/json
+      Host:
+      - tableau.lvh.me
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 26 Jun 2017 10:50:21 GMT
+      Server:
+      - Tableau
+      Content-Type:
+      - application/json;charset=utf-8
+      Vary:
+      - Accept-Encoding
+      Content-Encoding:
+      - gzip
+      P3p:
+      - CP="NON"
+      X-Ua-Compatible:
+      - IE=Edge
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '109'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAAz3MMQqAMAwF0Lv8WUKiqODm6AXc1UYoiJXUukjvLjq4vuHd
+        iGqX2rCvAd2Nw4JLyzmqRR/2V65pS4oOwlSRoMCc/OY+qJhJWuJGaiqFGbmA
+        aTz7w/8BSmqQ8wN0ZE3naAAAAA==
+    http_version: 
+  recorded_at: Mon, 26 Jun 2017 10:50:24 GMT
+recorded_with: VCR 3.0.3

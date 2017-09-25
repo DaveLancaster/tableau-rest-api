@@ -1,0 +1,32 @@
+require 'json'
+require 'rest-client'
+require 'aspector'
+require 'timerizer'
+require 'securerandom'
+
+require 'tableau_rest_api/version'
+require 'tableau_rest_api/client'
+require 'tableau_rest_api/area/user_group'
+require 'tableau_rest_api/area/workbook_datasource'
+require 'tableau_rest_api/area/schedule_subscription'
+require 'tableau_rest_api/resource'
+require 'tableau_rest_api/api_error'
+require 'tableau_rest_api/util/config'
+require 'tableau_rest_api/util/response'
+require 'tableau_rest_api/util/upload'
+require 'tableau_rest_api/util/token'
+require 'tableau_rest_api/helpers/helpers'
+require 'tableau_rest_api/resources/base'
+require 'tableau_rest_api/resources/site'
+require 'tableau_rest_api/resources/user'
+require 'tableau_rest_api/resources/group'
+require 'tableau_rest_api/resources/datasource'
+require 'tableau_rest_api/resources/project'
+require 'tableau_rest_api/resources/workbook'
+require 'tableau_rest_api/resources/subscription'
+require 'tableau_rest_api/resources/schedule'
+require 'tableau_rest_api/resources/server'
+
+# Tableau API wrapper lib
+module TableauRestApi
+end

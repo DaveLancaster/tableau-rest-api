@@ -1,0 +1,334 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://tableau.lvh.me/api/2.6/auth/signin
+    body:
+      encoding: UTF-8
+      string: '{"credentials":{"name":"<TABLEAU_USERNAME>","password":"<TABLEAU_PASSWORD>","site":{"contentUrl":""}}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (linux-gnu x86_64) ruby/2.3.3p222
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '94'
+      Host:
+      - tableau.lvh.me
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 26 Jun 2017 10:49:54 GMT
+      Server:
+      - Tableau
+      Content-Type:
+      - application/json;charset=utf-8
+      Vary:
+      - Accept-Encoding
+      Content-Encoding:
+      - gzip
+      P3p:
+      - CP="NON"
+      X-Ua-Compatible:
+      - IE=Edge
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '191'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAAz2Muw6CMBRA/+XONultC7SumjgYTPBV11La2KAQoWh88O/i
+        4nSWc84bbOcq18RgLj3M39CH6H4MFcwBDVKflIpQpkoiuBPEpIySLOMVpopy
+        Li3MwLZNnBaH7jI1MM5g6F33n7ASUSmmSMV9QoSnkhhlkTBKrRPcZ5ksf1Fs
+        a9dM/ml3Go6o+bYbdH68nWmrN/HxOTspXmvjJa+DL/ar9ln3qHGZ68X9WjwD
+        jOMXGnJqn80AAAA=
+    http_version: 
+  recorded_at: Mon, 26 Jun 2017 10:49:58 GMT
+- request:
+    method: get
+    uri: https://tableau.lvh.me/api/2.6/sites
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (linux-gnu x86_64) ruby/2.3.3p222
+      Content-Type:
+      - application/json
+      X-Tableau-Auth:
+      - XSXuV1W3RruWMVqh0oWNtw|he84zKaf83kifQTGoyks1W1DMWCvmQyi
+      Host:
+      - tableau.lvh.me
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 26 Jun 2017 10:49:54 GMT
+      Server:
+      - Tableau
+      Content-Type:
+      - application/json;charset=utf-8
+      Vary:
+      - Accept-Encoding
+      Content-Encoding:
+      - gzip
+      P3p:
+      - CP="NON"
+      X-Ua-Compatible:
+      - IE=Edge
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '521'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA92VS2sbMRDHv0rYcwb0Wj1yM22hhz4OaeihlKDHyBHY67CS
+        A23wd++oCZjY8SmH4t52/n/NSPoxo30c7v2yTL6VzTRcPfYIv2zXAefhauDD
+        5V/huvzGHjJGQts0v1o8+LLyYdVlO+wuh1oa1l6gfwxXPx6HknqK5yyPwQET
+        LoCSqMBrwcAYmbh2TEobqebk173Se8x+u2okxM3UcGo384pkin1al+nzJvVV
+        7568xZRuKs6V3Np833RYxFYekIQZH0qlG30stW3mXx+mflQ6T5u3uHc/lXVp
+        lCbGXmMbapxLwK/tjqoepCy3WNsiRqx7J/tVJSv6eIff/bze3r9I2l0+M7DC
+        SAzKgDZRgRrFCJ55A6OMiRtnMaPZM/hGG10TQ3FIwXv/T0E8X/ctJLSVNqGK
+        gFlJUMEKcIxZUFp6HS1qpdUxCXlIgjqt1WdEZ82D5ei1zQo4z5k6w3CaDgqF
+        cNl46WhoXuGhT/HQ584jcO6iiCPEmCIoZyUElT1oDCJIF6RIYc9jcdGJlGl5
+        0akcjctte3Jv65N71mTYGJNmHIFj0tQp0kCI0oIMMmiT2IjcveyUV6F0JP8J
+        D0QntQMv6GGlHtH0khgEpmLOIotAP5ljHqdwnDuNFBTnnJ7UrCwDpZwGO6oR
+        Riu7TkOF+YjGCRjnyuLnbvcHHjntMMwIAAA=
+    http_version: 
+  recorded_at: Mon, 26 Jun 2017 10:49:58 GMT
+- request:
+    method: post
+    uri: https://tableau.lvh.me/api/2.6/auth/signin
+    body:
+      encoding: UTF-8
+      string: '{"credentials":{"name":"<TABLEAU_USERNAME>","password":"<TABLEAU_PASSWORD>","site":{"contentUrl":""}}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (linux-gnu x86_64) ruby/2.3.3p222
+      Content-Type:
+      - application/json
+      X-Tableau-Auth:
+      - XSXuV1W3RruWMVqh0oWNtw|he84zKaf83kifQTGoyks1W1DMWCvmQyi
+      Content-Length:
+      - '94'
+      Host:
+      - tableau.lvh.me
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 26 Jun 2017 10:49:55 GMT
+      Server:
+      - Tableau
+      Content-Type:
+      - application/json;charset=utf-8
+      Vary:
+      - Accept-Encoding
+      Content-Encoding:
+      - gzip
+      P3p:
+      - CP="NON"
+      X-Ua-Compatible:
+      - IE=Edge
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '191'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAAz2NywqCQBRA/+Wuu3DnoeO0DYKKgp7UKsbxKmYp6URQ+e/l
+        ptVZnXPe4FvOuA6lu3YwfkNXBh5YZjAG4QTlUWqRpE1RK9boYklojMpEbEmp
+        xMMIfFOHX2LfXn8O9CN4dNz+IzIVwlppMVN5hDqnBJ31AiWRZ61yY5J0kEJT
+        cT1MT6+DnvN5K7F5+mp6M7Qsis99s9xF97opDnEZ7y8zdsfdarEOrdMnmlgB
+        ff8F6N5w980AAAA=
+    http_version: 
+  recorded_at: Mon, 26 Jun 2017 10:49:58 GMT
+- request:
+    method: get
+    uri: https://tableau.lvh.me/api/2.6/sites/1a10f5b9-029b-43e4-a620-773d1690338c/datasources
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (linux-gnu x86_64) ruby/2.3.3p222
+      Content-Type:
+      - application/json
+      X-Tableau-Auth:
+      - 1YzV4Je_S2-owckFm70Mgg|qRMT5qnogV6i6UjIeaXTNKQtra4Y0C91
+      Host:
+      - tableau.lvh.me
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 26 Jun 2017 10:49:55 GMT
+      Server:
+      - Tableau
+      Content-Type:
+      - application/json;charset=utf-8
+      Vary:
+      - Accept-Encoding
+      Content-Encoding:
+      - gzip
+      P3p:
+      - CP="NON"
+      X-Ua-Compatible:
+      - IE=Edge
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '529'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA82UTWvcMBCG/0rxqYUMjD4sWb6F9lgKJcmlpSyjr8TFX3jl
+        LWnY/14pCd20sEnIaW8e6Z15xw+juatmuu5GSt00Vu1dicKXdbBhqdqKVWf3
+        Bxfd71BCxHyQpkT9+Y66nmxfjutqf1Z5SrSd1sWFbSlzCKv2e666TD+DS+Wm
+        8zlFUGMVkw1IIxwwFhSQ4gxUFNIYYSQJk61GGorBpxBp7VOxmX6NpbPHMtwy
+        Zgw34EWsQUZsgIxjwBFdkCJq3diSlei6dJW/7tOi0rmiC6AaZUFqjkBWWzAo
+        aua0M9jUB/fdxodhul5ovuncZh3nbjelzUDp3ft5tX3nPmStm8YUxnS19M9l
+        POgLw9u5lF6C3950MZUCS6AU/Hkqv4VMAwpg6pJhK5q21t+yZJ3985L92amR
+        dlKRJ6zBOiMz6cjBInrgpHxsbDQmioP7ZRjmaaHl9uO6TdNw8fXz1VjG8j+8
+        x2Wvw8r5JZqW6xbNMaz/SE4PK1oRefQWtK0xt8AiGI4aoopSMS8lPsW629BI
+        /W3q3PaZkf2reduQ1i3HF4b0QXJ6NHXNnW4we0bBQUouIZt6MIWmjl426A7u
+        XRm+tJnXgY7SfKJ5E02JLz75R8np0ZRWRh8UglPWgOQhgBUZruBWehu8kbU5
+        tly36zDkd/3KxfqofutSFfLFpVok+x/7/R9BoMjNJQcAAA==
+    http_version: 
+  recorded_at: Mon, 26 Jun 2017 10:49:58 GMT
+- request:
+    method: post
+    uri: https://tableau.lvh.me/api/2.6/auth/signin
+    body:
+      encoding: UTF-8
+      string: '{"credentials":{"name":"<TABLEAU_USERNAME>","password":"<TABLEAU_PASSWORD>","site":{"contentUrl":""}}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (linux-gnu x86_64) ruby/2.3.3p222
+      Content-Type:
+      - application/json
+      X-Tableau-Auth:
+      - 1YzV4Je_S2-owckFm70Mgg|qRMT5qnogV6i6UjIeaXTNKQtra4Y0C91
+      Content-Length:
+      - '94'
+      Host:
+      - tableau.lvh.me
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 26 Jun 2017 10:49:55 GMT
+      Server:
+      - Tableau
+      Content-Type:
+      - application/json;charset=utf-8
+      Vary:
+      - Accept-Encoding
+      Content-Encoding:
+      - gzip
+      P3p:
+      - CP="NON"
+      X-Ua-Compatible:
+      - IE=Edge
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '193'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAAz2Muw6CMBRA/+XONLltedVNHYxIIhIYdIM+DJGgFCQi8u/i
+        4nSWc84E0mqlm74q6g5WE3RVr3+sFKyAFhSNVwqCTJTE5dolhc+QBAFX1BfI
+        eSjBAXlv+mWR23ppYHbg2Wn7n7CSUiGYIIobj7gGQ1IISQlDlNrlJgjC8hf1
+        95tuFt8Xgxke2Sa9sKzdb+rT1kaH9WdIxnj0Uj88y+sjecVRVO/fMeKws5HK
+        2yPM8xf7gI2yzQAAAA==
+    http_version: 
+  recorded_at: Mon, 26 Jun 2017 10:49:59 GMT
+- request:
+    method: delete
+    uri: https://tableau.lvh.me/api/2.6/sites/1a10f5b9-029b-43e4-a620-773d1690338c/datasources/4b4fde60-c6b9-42ee-b306-32b4dbed9459
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (linux-gnu x86_64) ruby/2.3.3p222
+      Content-Type:
+      - application/json
+      X-Tableau-Auth:
+      - 69vfvpTBRZ2TqIBlQCrJKA|vPyLy5R68YcgpPxLJJlIzL00vGrJdUqO
+      Host:
+      - tableau.lvh.me
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Date:
+      - Mon, 26 Jun 2017 10:49:55 GMT
+      Server:
+      - Tableau
+      P3p:
+      - CP="NON"
+      X-Ua-Compatible:
+      - IE=Edge
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Mon, 26 Jun 2017 10:49:59 GMT
+recorded_with: VCR 3.0.3
