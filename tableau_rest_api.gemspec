@@ -6,22 +6,13 @@ require 'tableau_rest_api/version'
 Gem::Specification.new do |spec|
   spec.name          = "tableau_rest_api"
   spec.version       = TableauRestApi::VERSION
-  spec.authors       = ["dave"]
+  spec.authors       = ["Dave Lancaster"]
   spec.email         = ["lancaster.dave@gmail.com"]
 
   spec.summary       = %q{Ruby library wrapping the Tableau REST API.}
-  spec.description   = %q{Exposes a subset of the Tablea v2.5 REST API (json).}
-  spec.homepage      = "https://github.com/davelancaster/tableau_rest_api"
+  spec.description   = %q{Exposes a subset of the Tablea v2.6 REST API (json).}
+  spec.homepage      = "https://github.com/davelancaster/tableau-rest-api"
   spec.license       = "MIT"
-
-  # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
-  # to allow pushing to a single host or delete this section to allow pushing to any host.
-  if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com'"
-  else
-    raise "RubyGems 2.0 or newer is required to protect against " \
-      "public gem pushes."
-  end
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})
