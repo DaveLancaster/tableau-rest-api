@@ -5,6 +5,7 @@ require 'timerizer'
 require 'securerandom'
 
 require 'tableau_rest_api/version'
+require 'tableau_rest_api/util/pagination'
 require 'tableau_rest_api/client'
 require 'tableau_rest_api/area/user_group'
 require 'tableau_rest_api/area/workbook_datasource'

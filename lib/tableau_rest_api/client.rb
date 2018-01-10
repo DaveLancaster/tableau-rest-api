@@ -4,6 +4,8 @@ module TableauRestApi
   # See the Request sub-class for resource requests.
   class Client
     attr_reader :config, :token
+
+    include TableauRestApi::Pagination
     
     def initialize
       @config = Config.new.options
@@ -39,9 +41,10 @@ module TableauRestApi
       head = boundary ? head.merge({ :content_type => "multipart/mixed; boundary=#{boundary}"}) : head
     end
 
-    def build_url(endpoint)
+    def build_url(endpoint, page=nil)
       endpoint = endpoint.is_a?(Array) ? endpoint.join('/') : endpoint
-      "#{@config[:host]}/#{@config[:base]}/#{@config[:api_version]}/#{endpoint}"
+      url = "#{@config[:host]}/#{@config[:base]}/#{@config[:api_version]}/#{endpoint}"
+      url = page ? url + "?pageNumber=#{page}" : url
     end
 
     def get(url)
@@ -60,6 +63,6 @@ module TableauRestApi
     
     def delete(url)
       Response.new(RestClient.delete(url, header)).parse
-    end 
-  end
+    end
+ end
 end

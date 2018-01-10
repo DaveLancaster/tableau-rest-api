@@ -19,8 +19,9 @@ module TableauRestApi
     end
 
     def sites
-      url = build_url 'sites'
-      (get url).sites.site.to_a.map { |site| Site.new(site, self) }
+      resp = get build_url('sites')
+      sites = extract_sites(resp)
+      sites = retrieve_additional_pages(resp, sites, 'sites', :extract_sites) 
     end
  
     def create_site(site)
@@ -37,6 +38,12 @@ module TableauRestApi
       url = build_url ['sites', site_id]
       delete url
       @token = nil
+    end
+
+    private
+
+    def extract_sites(response)
+      response.sites.site.to_a.map { |site| Site.new(site, self) }
     end
  end
 end

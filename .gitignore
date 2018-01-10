@@ -7,7 +7,6 @@
 /pkg/
 /spec/reports/
 /tmp/
-.ruby-version
 .reek
 .travis.yml
 /*.gem
