@@ -7,11 +7,11 @@ module TableauRestApi
 
     def paginate(pagination)
       read_pagination_header(pagination)
-      return single_page? if first_page
+      return single_page? if first_page?
       @total % ((@page) * @per_page) == @total
     end
 
-    def first_page
+    def first_page?
       @page == 0
     end
 
