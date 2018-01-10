@@ -16,7 +16,7 @@ module TableauRestApi
     end
 
     def single_page?
-      @total > @per_page ? false : true
+      @total <= @per_page
     end
 
     def read_pagination_header(pagination)
