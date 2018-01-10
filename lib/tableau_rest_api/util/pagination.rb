@@ -7,7 +7,7 @@ module TableauRestApi
 
     def paginate(pagination)
       read_pagination_header(pagination)
-      return has_multiple_pages? if first_page
+      return single_page? if first_page
       @total % ((@page) * @per_page) == @total
     end
 
@@ -15,7 +15,7 @@ module TableauRestApi
       @page == 0
     end
 
-    def has_multiple_pages?
+    def single_page?
       @total > @per_page ? false : true
     end
 
