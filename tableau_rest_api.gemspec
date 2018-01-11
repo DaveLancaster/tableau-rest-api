@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["lancaster.dave@gmail.com"]
 
   spec.summary       = %q{Ruby library wrapping the Tableau REST API.}
-  spec.description   = %q{Exposes a subset of the Tablea v2.6 REST API (json).}
+  spec.description   = %q{Exposes a subset of the Tableau v2.6 REST API (json).}
   spec.homepage      = "https://github.com/davelancaster/tableau-rest-api"
   spec.license       = "MIT"
 

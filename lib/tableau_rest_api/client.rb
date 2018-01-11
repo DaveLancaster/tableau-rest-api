@@ -64,5 +64,11 @@ module TableauRestApi
     def delete(url)
       Response.new(RestClient.delete(url, header)).parse
     end
+
+    def fetch_paginated_set(endpoint, extract)
+      response = get build_url(endpoint)
+      collection = extract.call(response)
+      collection = retrieve_additional_pages(response, collection, endpoint, extract) 
+    end
  end
 end
