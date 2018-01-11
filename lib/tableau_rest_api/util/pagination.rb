@@ -16,7 +16,7 @@ module TableauRestApi
     end
 
     def single_page?
-      @total <= @per_page
+      @total <= @per_page 
     end
 
     def read_pagination_header(pagination)
@@ -29,10 +29,10 @@ module TableauRestApi
       @page + 1
     end
  
-    def retrieve_additional_pages(response, collection, entity, extract)
+    def retrieve_additional_pages(response, collection, endpoint, extract)
       until complete?(response) do
-        response = (get build_url(entity, next_page))
-        collection = collection + self.send(extract, response)
+        response = (get build_url(endpoint, next_page))
+        collection = collection + extract.call(response)
       end
       collection
     end
